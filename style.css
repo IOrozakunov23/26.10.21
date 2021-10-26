@@ -1,14 +1,64 @@
-div{
-  background-color: blueviolet;
+/* div{ */
+/* background-color: tomato; */
+/* padding: 20px; */
+/* margin: 20px; */
+/* width: 200px; */
+/* height: 200px; */
+/* display: inline; */
+/* } */
+/* div:hover+span{
+  opacity: 1;
+} */
+span {
+  background-color: blue;
   padding: 20px;
   margin: 20px;
   width: 200px;
   height: 200px;
+  /* display: block; */
+  opacity: 0;
 }
-span{
-  background-color: chocolate;
+a {
+  background-color: tomato;
   padding: 20px;
   margin: 20px;
-  height: 200px;
+  min-width: 100px;
+  display: inline-block;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 500px;
+  gap: 20px;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+section div {
   width: 200px;
+  height: 150px;
+  background-color: tomato;
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 150px;
+}
+section div:nth-child(even) {
+}
+section div:first-child{
+  order: 2  ;
+}
+section div:first-child (5){
+order: 1;
+}
+section div{
+  order: 0;
+  flex-basis: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }

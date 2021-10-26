@@ -1,6 +1,14 @@
 div{
   background-color: blueviolet;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
 }
 span{
   background-color: chocolate;
+  padding: 20px;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
 }
